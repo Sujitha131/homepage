@@ -1,0 +1,138 @@
+.checkbtn {
+    color: #ffffff;
+    margin-right: 20px;
+    padding: 4px  7px 1px;
+    border: 2px solid #55c4e9;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:990px) {
+    .home{
+        background-color:#375180;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #check:checked~.navlinks {
+         display: block; 
+    }
+    .logo{
+        position: relative;
+        right: 40px;
+    }
+    .navlinks{
+        position: absolute;
+        /*display: flex;
+        flex-direction: column;*/
+        top: 25px;
+        width: 93%;
+        background-color: #fff;
+        right:20px;
+        height: 600px;
+        border-radius: 15px;
+        z-index: 1;
+        display: none;
+    }
+    .navlinks li{
+        width: 100%;
+        padding: 10px;
+    }
+    .navlinks a{
+        color: #375180;
+    }
+    #check:checked~.logo{
+        opacity: 30%;
+    }
+    .list1{
+        position: relative;
+        width: 100%;
+        left: 0%;
+    }
+   
+    .navlinks .d1:hover .list1{
+        display: inline;
+    }
+    .list2{
+        position: absolute;
+        top:0%;
+        width: 500px;
+        
+    }
+    .navlinks .d2:hover .list2{
+        display: inline;
+    }
+    .drop2{
+        position: absolute;
+        right: 90%;
+    }
+    .button{
+        width: 95%;
+        background-color: #fff;
+        color: #375180;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .button a{
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .head{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    .head .image{
+        position: relative;
+        width: 100%;
+        align-content: center;
+        animation: none;
+    }
+    .head .image img{
+        height:auto ;
+        width:320px ;
+    }
+        
+    .head .words{
+        width: 100%;
+        margin-left: 0;  
+    }
+    .head .words h2 , h3{
+        justify-content: center;
+        text-align:center;
+    }
+
+    .head .bottom{
+        position: relative;
+        width: 80%;  
+        justify-content: center; 
+        margin-bottom: 30px;
+    }
+    .head .bottom .play{
+        display: flexbox;
+    }
+    .button{
+        text-align: center;
+        font-size: 18px;
+    }
+    .subhome{
+        margin-top: 5px;
+    }
+    .subhome .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,16rem);
+        gap: 2rem;
+        align-items: flex-start;  
+        justify-content: center; 
+        
+    }
+    .subhome .box-container .box{
+       margin-left: 60px;
+    }
+}
+    
